@@ -77,7 +77,7 @@ describe "#random_subset" do
   end
 
   it "should return elements present in the initial array" do
-    (response - array).must_be_empty if response.is_a? Array
+    (response - array).must_be_empty
   end
 
 end
@@ -94,7 +94,7 @@ describe "#randomize" do
 
   it "should return random copy of the initial array" do
     response.must_be_instance_of Array
-    response.sort.must_equal array.sort if response.is_a? Array
+    response.sort.must_equal array.sort
   end
 
 end
