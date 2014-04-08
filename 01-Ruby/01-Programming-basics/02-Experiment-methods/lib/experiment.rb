@@ -21,7 +21,7 @@ def replace(initial_string, old_letter, new_letter)
 end
 
 def exactly_divide(an_integer, a_divider)
-  an_integer.div(a_divider)
+  an_integer.fdiv(a_divider)
   # TODO: return divison of an_integer by a_divider (computing the floating division, NOT the euclidean one)
   # example: exactly_divide(13, 4) => 3.25
 end
