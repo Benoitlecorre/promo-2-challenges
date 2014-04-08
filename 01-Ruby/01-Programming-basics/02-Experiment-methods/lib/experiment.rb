@@ -2,6 +2,8 @@
 # - One line of code for each method
 # - Just look in the doc for the right method of the String, Fixnum, and Array classes !
 
+print "hello"
+
 def get_rid_of_surrounding_whitespaces(a_string)
   a_string.strip
   # TODO: return a copy of the string with leading and trailing whitespaces removed
