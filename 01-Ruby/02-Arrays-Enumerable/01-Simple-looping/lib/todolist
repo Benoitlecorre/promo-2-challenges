@@ -1,0 +1,8 @@
+todo = {}
+
+"Que devez-vous faire aujourd'hui ?"
+task = gets.chomp.to_s
+
+"Quel est la priorité de cette tâche ?"
+priority = gets.chomp.to_i
+
