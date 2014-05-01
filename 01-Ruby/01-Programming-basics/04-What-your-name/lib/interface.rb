@@ -2,7 +2,7 @@ require_relative "compute_name"
 
 def ask_and_get(param)
   puts "What is your #{param}"
-  param = gets.chomp
+  gets.chomp
   #- Ask the user to write a value for param
   #- Get and return the string inputted by the user
 end

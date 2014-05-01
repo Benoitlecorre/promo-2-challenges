@@ -2,6 +2,8 @@
 
 You will code a CookBook application that manages recipes.
 
+##Coder un livre de recettes
+
 The idea is quite simple: you just got a new oven and want to remember all the recipes you are going to try out with it.
 Here comes your cookbook! It'll keep a list of your future culinary successes, allow you to review them, add some recipes and delete others.
 
@@ -31,12 +33,15 @@ Here are the core functionalities your `Cookbook` class should provide :
 
 ##### List all recipes
 * Returns an ordered list of all the recipes in your CookBook reading them from your CSV file
+- LIRE LE FICHIER CSV DANS L'ORDRE
 
 ##### Add a recipe
 * Add the recipe to the end of your CookBook (and update CSV file)
+- INSERER A LA FIN DU FICHIER LA NOUVELLE RECETTE
 
 ##### Delete a recipe
 * Delete that recipe from your CookBook (and update CSV file)
+- DELETER N'IMPORTE QUELLE RECETTE DU FICHIER CSV / N'IMPORTE / CERTAINEMENT DANS DES TABLEAUX
 
 ### controller.rb
 
@@ -59,11 +64,13 @@ You must tweak the `lib/ui.rb` to use your Cookbook class and display the follow
 
 What do you wanna do?
 
-- List all recipes [list]
-- Add a new recipe [add]
-- Delete a recipe [del]
-- Exit [Esc.]
+- List all recipes [list] -> afficher toutes les recettes du fichier CSV les unes en dessous des autres par ordre
+- Add a new recipe [add] -> Champ en input, tu remplis un tableau pour ajouter les données au CSV. Formatage des docs. Le formulaire de l'input doit être calée au CSV
+- Delete a recipe [del] -> Choisir la recette par son nom et la il doit le supp du fichier CSV
+- Exit [Esc.] -> Ca finit le programme.
 ```
+
+/
 
 #### Available choices
 

@@ -1,4 +1,5 @@
 require 'csv'
+require 'scrapping'
 #a supprimer après les tests
 
 class Cookbook
@@ -12,6 +13,9 @@ attr_reader :contents
     #@content est notre instance variable détenue dans load_csv
   end
 
+
+
+
   def load_csv(file)
     @contents = []
       CSV.foreach(file) do|row|
@@ -23,16 +27,16 @@ attr_reader :contents
     #.join convertis toutes tes strings dans un array. et la virgule/espace permet de les espacer.
 
 
-  def add(name_recipe)
+  def create(name_recipe)
     @contents << name_recipe
     CSV.open(@file, "w") do |csv| #créer add file , #a ajouter à la fin #wb #read
-    csv << [name_recipe]
+    csv << name_recipe
     end
 
   end
 
   #deleter n'importe quelle recette et donc l'eraser
-  def delete(choice)
+  def destroy(choice)
     @contents.delete_at(choice -1)
     CSV.open(@file, "w") do |csv| #créer add file , #a ajouter à la fin #wb #read
       @contents.each do |name|

@@ -13,11 +13,11 @@ class Controller#va faire le lien avec la fonction que tu appelles dans ton UI.
   end
 
   def add(name_recipe)
-    @cookbook.add(name_recipe)
+    @cookbook.create(name_recipe)
   end
 
   def delete(choice)
-    @cookbook.delete(choice)
+    @cookbook.destroy(choice)
   end
 
 

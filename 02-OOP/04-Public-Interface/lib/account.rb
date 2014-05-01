@@ -41,19 +41,27 @@ class BankAccount
   end
 
   def transactions_history(args = {})
-    if args[:password] == @password
+    if args[:password] == @password #Est-ce que dans le hash il y a un truc qui s'appelle password
       @transactions.to_s
-    elsif args[:password] == nil
+    elsif args[:password] == nil #tout est vrai sauf nil et false
       "no password given"
     elsif args[:password] != @password
       "wrong password"
     end
+=begin
+  if args[:password] #on ne met pas de nil ici car args est automatiquement vrai si il y a une password
+    if args[:password] == @password
+      "Transactions : #{}"
+
+=end
+
+#
   # TODO: Check if there is a password and if so if it is correct
   # TODO: return a string displaying the transactions, BUT NOT return the transaction array !
   end
 
   def iban
-  @iban[0,4] + "*******************" + @iban[30,32]
+  @iban[0..3] + "*******************" + @iban[-3..-1]#de la troisieme avant derniere à la dernierett
   end
 
   def to_s
