@@ -1,6 +1,36 @@
 .container {
-  margin: 0 auto;  
+  margin: 0 auto;
   width: 840px;
 	font-family: 'Open Sans', sans-serif;
 }
 
+h1 {
+  text-align:left;
+
+}
+
+nav {
+  float:left;
+  width:120px;
+  border-top: 1px solid #808080;
+
+}
+
+nav li {
+  list-style-type: none;
+  padding-left: 0;}
+
+.content{
+margin-left : 120px;
+border-top: 1px solid #808080;
+border-left: 1px solid #808080;
+padding-left:30px;
+
+}
+
+
+footer{
+  border-top: 1px solid #808080;
+  padding:30px;
+  clear:none;
+}

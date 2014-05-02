@@ -1,6 +1,21 @@
 .container {
-  margin: 0 auto;  
+  margin: 0 auto;
   width: 840px;
+  text-align:center;
 }
 
-/*Add some CSS rules to design your form */ 
+body{
+  background-color:pink;
+}
+
+
+h1{
+  color:white;
+  font-size:5em;
+  font-family: Codystar;
+  font-style: upcase;
+}
+
+img{display:inline;}
+
+
