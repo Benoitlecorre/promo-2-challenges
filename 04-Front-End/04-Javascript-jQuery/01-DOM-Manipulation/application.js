@@ -30,29 +30,25 @@ function run_challenges() {
   // Ex 5. Count the number of table body rows there are (team count!)
   var team_count = $('tbody >tr').length;  // TODO: replace 0, keep the team_count variable.
 
-
-
   // Ex 6. Say there is a 15th team added to the table.
   //       Add a row at the bottom, this new team should have zero points.
 
   $('tbody').append( "<tr><td>14</td><td>Biarritz Olympique </td><td>0</td></tr>" );
 
   // Ex 7. Write some code to sum all points given to all teams
-  var sum = 0;  // TODO: replace 0 with your sum result, keep the sum variable.
-
+  var sum = 0; // TODO: replace 0 with your sum result, keep the sum variable.
 
 
   // Ex 8. Change the background color of all table header cells to #DDF4FF
-
+     $('thead th').css({'background-color': '#DDF4FF'});
 
 
   // Ex 9. Translate the #results list 20px downward (animation would be great ^_^)
-
-
+  $('#results').animate({
+    top: '20px'}, 500 );
 
   // Ex 10. Remove the "Email:" label from the DOM
-
-
+  $('label').remove();
 
   // Checking exercise answers. DO NOT MODIFY BELOW
   assert_equal(email, "boris@lewagon.org");
